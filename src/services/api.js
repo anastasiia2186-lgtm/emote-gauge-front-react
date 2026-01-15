@@ -1,5 +1,5 @@
-const API_URL = "http://localhost:5010/api";
-// const API_URL = "https://emoti-gauge-back.onrender.com/api";
+// const API_URL = "http://localhost:5010/api";
+const API_URL = "https://emoti-gauge-back.onrender.com/api";
 
 class API {
   constructor() {
