@@ -10,7 +10,10 @@ function App() {
     <BrowserRouter>
       <Routes>
         {/* Головна сторінка - редірект на реєстрацію */}
-        <Route path="/" element={<Navigate to="/register" replace />} />
+        <Route
+          path="/"
+          element={<Navigate to="/pages/register.html" replace />}
+        />
 
         {/* Сторінки */}
         <Route path="/pages/register.html" element={<RegisterPage />} />
@@ -23,16 +26,6 @@ function App() {
         <Route
           path="/pages/survey-detail.html"
           element={<SurveyDetailPage />}
-        />
-
-        {/* TODO в майбутньому */}
-        <Route
-          path="/reset-password"
-          element={<div>Reset Password (TODO)</div>}
-        />
-        <Route
-          path="/forgot-password"
-          element={<div>Forgot Password (TODO)</div>}
         />
 
         {/* 404 */}
