@@ -4,6 +4,7 @@ import LoginPage from "./pages/LoginPage";
 import DashboardPage from "./pages/DashboardPage";
 import CreateSurveyPage from "./pages/CreateSurveyPage";
 import SurveyDetailPage from "./pages/SurveyDetailPage";
+import TakeSurveyPage from "./pages/TakeSurveyPage";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           path="/pages/survey-detail.html"
           element={<SurveyDetailPage />}
         />
+        <Route path="/pages/take-survey.html" element={<TakeSurveyPage />} />
 
         {/* 404 */}
         <Route path="*" element={<div>404 - Page Not Found</div>} />
